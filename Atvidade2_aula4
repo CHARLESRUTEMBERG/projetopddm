@@ -21,3 +21,24 @@ senãose imc > 35 |e| imc < 39.99 então
 Senão
 	imprima "Obesidade III (mórbida)"
 fim
+#indice de massa corpórea
+#declaração de variáveis
+var massa := leia_numero
+var altura := leia_numero
+var imc := massa/(altura*altura)
+
+se imc <17 então
+	imprima "Muito abaixo do peso"
+senãose imc  >=17 |e| imc <=18.49 então
+	imprima "Abaixo do peso"
+senãose imc >= 18.5 |e| imc <=24.99 então
+	imprima "Peso normal"
+senãose imc >= 25 |e| imc <=29.99 então
+	imprima "Acima do peso"
+senãose imc >=30 |e| imc <=34.99 então
+	imprima "Obesidade I"
+senãose imc >=35 |e| imc <= 39.99 então
+	imprima "Obesidade II (severa)"
+senãose
+	imprima "Obesidade III (mórbida)"
+fim
